@@ -179,3 +179,19 @@ cython_debug/
 #  refer to https://docs.cursor.com/context/ignore-files
 .cursorignore
 .cursorindexingignore
+
+# Datasets originales de la NFL
+/play_by_play_*.csv
+
+# Resultados generados por MapReduce
+/resultados_series/
+
+# Archivos comprimidos
+*.zip
+
+# Archivos temporales de Python
+__pycache__/
+*.pyc
+
+# Archivos del sistema macOS
+.DS_Store
