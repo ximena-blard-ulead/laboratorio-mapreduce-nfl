@@ -2,6 +2,7 @@ import csv
 import os
 import multiprocessing
 from itertools import chain, groupby
+from datetime import datetime #para la comparación
 
 # ==========================================
 # 1. FASE MAP (Filtrado y Extracción)
@@ -136,4 +137,12 @@ def ejecutar_motor():
         print(f"🏈 {partido}: {info['total_td']} Series registradas en '{info['archivo']}'")
 
 if __name__ == '__main__':
+    inicio = datetime.now()
+
     ejecutar_motor()
+
+    fin = datetime.now()
+
+    tiempo_total = fin - inicio
+
+    print(f"\n Tiempo de ejecución: {tiempo_total.total_seconds():.4f} segundos")

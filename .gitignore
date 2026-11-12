@@ -183,8 +183,9 @@ cython_debug/
 # Datasets originales de la NFL
 /play_by_play_*.csv
 
-# Resultados generados por MapReduce
+# Resultados generados por MapReduce y el programa comparativo
 /resultados_series/
+/resultados_tradicional/
 
 # Archivos comprimidos
 *.zip
